@@ -30,8 +30,7 @@ public class MainActivity extends AppCompatActivity {
     TEXTS.add("This is normal text.");
     TEXTS.add("This is normal text and https://www.google.com/");
     TEXTS.add("https://www.google.com/");
-    IMAGES.add("NO IMAGE");
-    IMAGES.add("SOME IMAGE");
+    IMAGES.add("Ayyy supertroppers");
   }
 
   @BindView(R.id.spinner_mime) Spinner spinnerMime;
@@ -92,7 +91,8 @@ public class MainActivity extends AppCompatActivity {
       intent.putExtra(Intent.EXTRA_TEXT, text);
     }
     if (checkBoxImage.isEnabled()) {
-      String uri = (String) spinnerText.getSelectedItem();
+
+
       intent.setType((String) spinnerMime.getSelectedItem());
       intent.setData(Uri.parse(uri));
     }
