@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16sp"
+    >
+
+  <!-- MIME TYPE -->
+  <TextView
+      android:textSize="16sp"
+      android:text="Set MIME type"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      />
+  <Spinner
+      android:id="@+id/spinner_mime"
+      android:paddingLeft="8sp"
+      android:paddingStart="8sp"
+      android:layout_width="match_parent"
+      android:layout_height="56dp"
+      />
+
+  <!-- EXTRA_TEXT -->
+  <TextView
+      android:textSize="16sp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Set EXTRA_TEXT field"
+      />
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="56dp"
+      android:orientation="horizontal"
+      >
+    <CheckBox
+        android:checked="true"
+        android:id="@+id/checkbox_text"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        />
+    <Spinner
+        android:id="@+id/spinner_text"
+        android:paddingLeft="8sp"
+        android:paddingStart="8sp"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        />
+  </LinearLayout>
+
+  <!-- EXTRA_IMAGE -->
+  <TextView
+      android:textSize="16sp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Set EXTRA_DATA_URI field"
+      />
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="56dp"
+      android:orientation="horizontal"
+      >
+    <CheckBox
+        android:checked="true"
+        android:id="@+id/checkbox_image"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        />
+    <Spinner
+        android:id="@+id/spinner_image"
+        android:paddingLeft="8sp"
+        android:paddingStart="8sp"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        />
+  </LinearLayout>
+
+</LinearLayout>
